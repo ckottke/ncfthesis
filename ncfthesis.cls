@@ -7,22 +7,22 @@
 % 04/11/2019 nobind option added, support for multiple sponsors, correct handling of two sided documents
 % 04/05/2019 Basic version
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ncfthesis}[2019/04/15 NCF thesis class]
+\ProvidesClass{ncfthesis}[2020/04/20 NCF thesis class]
  
-\LoadClass{report} % Use report class as a base
-
-\RequirePackage{geometry}
-\RequirePackage{setspace}
  
 % Allow for a singlespace option
 \def\@mystretch{1.5} % Default to double space
 \DeclareOption{singlespace}{\def\@mystretch{1}}
-\setstretch{\@mystretch}
 
 % Library margin requirements for binding are the default
 % nobind option gives symmetric margins
-\geometry{letterpaper, inner=1.5in, outer=1in, top=1in, bottom=1in}
-\DeclareOption{nobind}{\geometry{letterpaper, inner=1.25in, outer=1.25in, top=1in, bottom=1in}}
+\def\@geometryopts{{letterpaper, inner=1.5in, outer=1in, top=1in, bottom=1in}}
+\def\@innermargin{1.5in}
+\def\@outermargin{1in}
+\DeclareOption{nobind}{
+  \def\@geometryopts{{letterpaper, inner=1.25in, outer=1.25in, top=1in, bottom=1in}}
+  \def\@innermargin{1.25in}
+  \def\@outermargin{1.25in}}
 
 % dots option for dotted signature line instead of solid line
 \def\@filltype{\hrulefill}
@@ -30,6 +30,15 @@
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}} 
 \ProcessOptions\relax
+% End options section
+
+\LoadClass{report} % Use report class as a base
+
+\RequirePackage{geometry}
+\RequirePackage{setspace}
+
+\setstretch{\@mystretch}
+\geometry{letterpaper, inner=\@innermargin, outer=\@outermargin, top=1in, bottom=1in}
 
  
 \gdef\@degree{Bachelor of Arts}
