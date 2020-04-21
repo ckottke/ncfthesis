@@ -3,6 +3,7 @@
 %%
 % Changelog: 
 %
+% 04/20/2020 Fixed improper handling of font size. (Was not being passed through to report class correctly).
 % 04/15/2019 Default to letter paper, dotted signature line optional (default to solid)
 % 04/11/2019 nobind option added, support for multiple sponsors, correct handling of two sided documents
 % 04/05/2019 Basic version
