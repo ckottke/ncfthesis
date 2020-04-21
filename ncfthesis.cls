@@ -16,13 +16,9 @@
 
 % Library margin requirements for binding are the default
 % nobind option gives symmetric margins
-\def\@geometryopts{{letterpaper, inner=1.5in, outer=1in, top=1in, bottom=1in}}
 \def\@innermargin{1.5in}
 \def\@outermargin{1in}
-\DeclareOption{nobind}{
-  \def\@geometryopts{{letterpaper, inner=1.25in, outer=1.25in, top=1in, bottom=1in}}
-  \def\@innermargin{1.25in}
-  \def\@outermargin{1.25in}}
+\DeclareOption{nobind}{\def\@innermargin{1.25in}\def\@outermargin{1.25in}}
 
 % dots option for dotted signature line instead of solid line
 \def\@filltype{\hrulefill}
