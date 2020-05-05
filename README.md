@@ -78,7 +78,7 @@ The `\documentclass` line takes optional arguments, including the following.
 
 For example, to use minimal paper when priting drafts (not for your official copy!):
 ```latex
-\documentclass[10pt,singlespace,twosided,nobind]{ncfthesis}   
+\documentclass[10pt,singlespace,nobind]{ncfthesis}   
 ```
 
 In addition, you may use any option recognized by the `report` class (such as `reqno`, `twocolumn`, etc).
