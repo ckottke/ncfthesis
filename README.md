@@ -2,12 +2,14 @@
 
 ## Getting started
 
+Download LaTeX [here](https://www.latex-project.org/get/), or consider using a cloud based service like [Overleaf](https://www.overleaf.com/).
+
 Make sure [`ncfthesis.cls`](ncfthesis.cls) is in your directory alongside your source file.
 To use this class for your document, your source file should begin with
 `\documentclass{ncfthesis}`.  A [template file](template.tex) (and [bibliography](template.bib)) are provided
-for reference. The class file is based on the `report` class, with `chapter`s as
-the highest organizational unit, followed by `section`s, `subsection`s, etc. (Technically `part`s 
-are available above chapters, but are rarely used.)
+for reference. The class file is based on the `report` class, with `chapter` as
+the highest organizational unit, followed by `section`, `subsection`, etc. (Technically `part` 
+is available above chapters, but this is rarely used.)
 
 ## Minimal example
 See [template.tex](template.tex) for more options.
@@ -83,8 +85,8 @@ In addition, you may use any option recognized by the `report` class (such as `r
 
 ## Recommended packages
 For best results, the following packages are endorsed:
-* `amsmath`, `amssymb` and (if you need theorem environments) `amsthm`, the AMS packages for serious math typesetting.
-* `hyperref` will make your references clickable and the associated pdf will have a navigable table of contents. If the colored boxes bother you, try `\usepackage[colorlinks]{hyperref}` or `\usepackage{hidelinks]{hyperref}`.
-* `subfiles` allows you to modularize your document (consider having one file per chapter).
-* `tikz` for figures, `pgfplots` for plotting data, or `graphicx` if you will include external images.
-* `inputenc` with the `utf8` option for UTF-8 character encoding.
+* `\usepackage{amsmath,amssymb}`, and (if you need theorem environments) `\usepckage{amsthm}` will provide the AMS packages for [serious math typesetting](http://www.texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf).
+* `\usepackage{hyperref}` will make your references clickable and the associated PDF will have a navigable table of contents. (If I am getting an electronic copy of your thesis, please do this!) If the colored boxes bother you, try `\usepackage[colorlinks]{hyperref}` or `\usepackage{hidelinks]{hyperref}`.
+* `\usepacakge{subfiles}` allows you to modularize your document (consider having one file per chapter). See [this guide](https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects)  or [the official documentation](http://mirrors.ctan.org/macros/latex/contrib/subfiles/subfiles.pdf) for details.
+* `\usepackage{tikz}` for [figures](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf), `\usepackage{pgfplots}` for [plotting data](http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf), or `\usepackage{graphicx}` if you will [include external images](http://mirrors.ctan.org/macros/latex/required/graphics/grfguide.pdf).
+* `\usepackage[utf8]{inputenc}` for UTF-8 character encoding.
