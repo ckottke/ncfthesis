@@ -56,13 +56,13 @@ These should appear in the preamble (before the `\begin{document}` line):
 * `\thesisdate` Required. This is the date that appears on the signature lines for your signed library copy.
 * `\sponsor` Required. Takes two arguments (thesis sponsor's name, and title). For multiple sponsors, simply add additional `\sponsor` lines.
 
-These appear after `\begin{document}` and are responsible for the front matter:
+These appear after `\begin{document}` and are responsible for setting the front matter:
 
 * `\frontmatter` Sets page numbering to roman for front matter.
 * `\maketitle` Required. Sets title page. 
 * `\begin{abstract}` and `\end{abstract}` Required. The abstract page also has the signature lines for your sponsor(s).
 * `\begin{dedication}` and `\end{dedication}` Optional. Should come directly after title page if used.
-* `\begin{acknowledgements}` and `\end{acknowledgements}` Optional. Should comes after dedication and before abstract if used.
+* `\begin{acknowledgements}` and `\end{acknowledgements}` Optional. Should come after dedication and before abstract if used.
 * `\tableofcontents` Optional. Generates table of contents. If used, it should come at the end of the front matter.
 * `\mainmatter` Resets page numbering to arabic after all the front matter.
 
@@ -70,9 +70,9 @@ These appear after `\begin{document}` and are responsible for the front matter:
 ## Available options
 The `\documentclass` line takes optional arguments, including the following.
 * `12pt`, `11pt`, or `10pt` Sets the font size. `12pt` is the default.
-* `singlespace` Typesets in single space, instead of double space (which is the default, and required for the final version).
-* `twoside` For printing double sided. (This arranges the margins for double sided printing and makes new chapters start on odd numbered pages.) The default is appropriate for single sided printing.
-* `nobind` Gives symmetric margins, as opposed to the offset margins required for binding a physical copy.
+* `singlespace` Typesets in single space instead of double space. Note that double space is required for the final version.
+* `twoside` For printing double sided. This arranges the margins for double sided printing and makes new chapters start on odd numbered pages. The default is appropriate for single sided printing. Either may be used for your final copy.
+* `nobind` Gives symmetric margins, as opposed to the offset margins required for binding a physical copy. 
 * `dots` Uses dots instead of a solid line for the signature line.
 
 For example, to use minimal paper when priting drafts (not for your official copy!):
