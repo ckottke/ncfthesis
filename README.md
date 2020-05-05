@@ -2,14 +2,15 @@
 
 ## Getting started
 
-Make sure the `ncfthesis.cls` is in your directory alongside your source file.
+Make sure [`ncfthesis.cls`](ncfthesis.cls) is in your directory alongside your source file.
 To use this class for your document, your source file should begin with
-`\documentclass{ncfthesis}`.  A template file (and bibliography) are provided
+`\documentclass{ncfthesis}`.  A [template file](template.tex) (and [bibliography](template.bib)) are provided
 for reference. The class file is based on the `report` class, with `chapter`s as
 the highest organizational unit, followed by `section`s, `subsection`s, etc. (Technically `part`s 
 are available above chapters, but are rarely used.)
 
 ## Minimal example
+See [template.tex](template.tex) for more options.
 ```latex
 \documentclass{ncfthesis}
 
@@ -22,7 +23,6 @@ are available above chapters, but are rarely used.)
 \degreeyear{2020}
 
 \thesisdate{May 10, 2020}
-
 
 \begin{document}
 
@@ -37,7 +37,6 @@ Abstract goes here.
 \end{abstract}
 
 % Optional table of contents.
-
 
 \mainmatter
 
