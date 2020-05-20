@@ -85,8 +85,8 @@ In addition, you may use any option recognized by the `report` class (such as `r
 
 ## Recommended packages
 For best results, the following packages are endorsed:
-* `\usepackage{amsmath,amssymb}`, and (if you need theorem environments) `\usepckage{amsthm}` will provide the AMS packages for [serious math typesetting](http://www.texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf).
-* `\usepackage{hyperref}` will make your references clickable and the associated PDF will have a navigable table of contents. (If I am getting an electronic copy of your thesis, please do this!) If the colored boxes bother you, try `\usepackage[colorlinks]{hyperref}` or `\usepackage{hidelinks]{hyperref}`.
+* `\usepackage{amsmath,amssymb}`, and (if you need theorem environments) `\usepackage{amsthm}` will provide the AMS packages for [serious math typesetting](http://www.texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf).
+* `\usepackage{hyperref}` will make your references clickable and the associated PDF will have a navigable table of contents. (If I am getting an electronic copy of your thesis, please do this!) If the colored boxes bother you, try `\usepackage[colorlinks]{hyperref}` or `\usepackage[hidelinks]{hyperref}`.
 * `\usepacakge{subfiles}` allows you to modularize your document (consider having one file per chapter). See [this guide](https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects)  or [the official documentation](http://mirrors.ctan.org/macros/latex/contrib/subfiles/subfiles.pdf) for details.
 * `\usepackage{tikz}` for [figures](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf), `\usepackage{pgfplots}` for [plotting data](http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf), or `\usepackage{graphicx}` if you will [include external images](http://mirrors.ctan.org/macros/latex/required/graphics/grfguide.pdf).
 * `\usepackage[utf8]{inputenc}` for UTF-8 character encoding.
