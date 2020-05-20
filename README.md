@@ -33,11 +33,11 @@ is available above chapters, but this is not often used.) All options recognized
 
 % Optional dedication and acknowledgements sections. (See below)
 
+% Optional table of contents.
+
 \begin{abstract}
 Abstract goes here.
 \end{abstract}
-
-% Optional table of contents.
 
 \mainmatter
 
@@ -63,8 +63,8 @@ These appear after `\begin{document}` and are responsible for setting the front 
 * `\maketitle` Required. Sets title page. 
 * `\begin{dedication}` and `\end{dedication}` Optional. Should come directly after title page if used.
 * `\begin{acknowledgements}` and `\end{acknowledgements}` Optional. Should come after dedication and before abstract if used.
+* `\tableofcontents` Optional. Generates table of contents. If used, it should come after the dedication/acknowledgements and before the abstract.
 * `\begin{abstract}` and `\end{abstract}` Required. The abstract page also has the signature lines for your sponsor(s).
-* `\tableofcontents` Optional. Generates table of contents. If used, it should come at the end of the front matter.
 * `\mainmatter` Resets page numbering to arabic after all the front matter.
 
 
@@ -72,13 +72,13 @@ These appear after `\begin{document}` and are responsible for setting the front 
 The `\documentclass` line takes optional arguments, including the following:
 * `12pt`, `11pt`, or `10pt` Sets the font size. `12pt` is the default.
 * `singlespace` Typesets in single space instead of double space. Note that double space is required for the final version.
-* `twoside` For printing double sided. This arranges the margins for double sided printing and makes new chapters start on odd numbered pages. The default is appropriate for single sided printing. Either may be used for your final copy.
+* `twoside` For printing double sided. This arranges the margins for double sided printing and makes new chapters start on odd numbered pages. The default is appropriate for single sided printing. The final printed library copy must be single sided.
 * `nobind` Gives symmetric margins, as opposed to the offset margins required for binding a physical copy. 
 * `dots` Uses dots instead of a solid line for the signature line.
 
 For example, to use minimal paper when printing drafts (not for your official copy!):
 ```latex
-\documentclass[10pt,singlespace,nobind]{ncfthesis}   
+\documentclass[10pt,twoside,singlespace,nobind]{ncfthesis}   
 ```
 
 In addition, you may use any option recognized by the `report` class (such as `reqno`, `twocolumn`, etc).
