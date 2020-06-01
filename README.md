@@ -4,9 +4,9 @@
 
 Download LaTeX [here](https://www.latex-project.org/get/), or consider using a cloud based service like [Overleaf](https://www.overleaf.com/).
 
-Put [`ncfthesis.cls`](ncfthesis.cls) in your directory alongside your source file.
+Put [`ncfthesis.cls`](https://github.com/ckottke/ncfthesis/raw/master/ncfthesis.cls) in your directory alongside your source file.
 To use this class for your document, your source file should begin with
-`\documentclass{ncfthesis}`.  A [template file](template.tex) (and [bibliography](template.bib)) are provided
+`\documentclass{ncfthesis}`.  A [template file](https://github.com/ckottke/ncfthesis/raw/master/template.tex) (and [bibliography](https://github.com/ckottke/ncfthesis/raw/master/template.bib)) are provided
 for reference, and a minimal example follows. 
 
 This class is based on the LaTeX `report` class, with `chapter` as
